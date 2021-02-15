@@ -3,22 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>About | 蓝桦枫玥のブログ</title>
+  <title>idea使用Maven创建SpringMVC项目详解 | 蓝桦枫玥のブログ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="蓝桦枫玥のブログ" />
   
-  <meta name="description" content="1.博客更新时间是半个月一更2.暂不开通博客讨论区跟评论，可以私聊我B站账号3.目前颓废中ing…个人bilibili账号：https:&#x2F;&#x2F;space.bilibili.com&#x2F;15064045">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="http://lanhuafengyue.github.io/about/index.html">
+  <meta name="description" content="具体创建过程如下： 使用快速创建maven项目 输入初试包的名称以及项目名 选择maven，这里推荐使用本地安装的maven，如果你没有代理的话，创建项目容易超时，初次使用maven时应注意在初始化的时候至少有28个以上文件才算初始化成功，保证今后创建的项目不会出错 这里输入的项目名应该和一开始输入的名字保持一致，不然在项目运行时会出现两个项目 1是初始化后的文件目录结构，这并不是Spring项目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="idea使用Maven创建SpringMVC项目详解">
+<meta property="og:url" content="http://lanhuafengyue.github.io/2020/01/28/blog5/index.html">
 <meta property="og:site_name" content="蓝桦枫玥のブログ">
-<meta property="og:description" content="1.博客更新时间是半个月一更2.暂不开通博客讨论区跟评论，可以私聊我B站账号3.目前颓废中ing…个人bilibili账号：https:&#x2F;&#x2F;space.bilibili.com&#x2F;15064045">
+<meta property="og:description" content="具体创建过程如下： 使用快速创建maven项目 输入初试包的名称以及项目名 选择maven，这里推荐使用本地安装的maven，如果你没有代理的话，创建项目容易超时，初次使用maven时应注意在初始化的时候至少有28个以上文件才算初始化成功，保证今后创建的项目不会出错 这里输入的项目名应该和一开始输入的名字保持一致，不然在项目运行时会出现两个项目 1是初始化后的文件目录结构，这并不是Spring项目">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2017-06-17T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-02-15T15:15:07.184Z">
+<meta property="og:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic1.png">
+<meta property="og:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic2.png">
+<meta property="og:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic3.png">
+<meta property="og:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic4.png">
+<meta property="og:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic5.png">
+<meta property="og:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic6.png">
+<meta property="og:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic7.png">
+<meta property="og:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic8.png">
+<meta property="og:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic9.png">
+<meta property="article:published_time" content="2020-01-28T09:49:56.000Z">
+<meta property="article:modified_time" content="2020-05-24T02:30:24.152Z">
 <meta property="article:author" content="蓝桦枫玥">
+<meta property="article:tag" content="Spring">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lanhuafengyue.github.io/2020/01/28/blog5/pic1.png">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -110,20 +121,27 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-blog5" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      About
+      idea使用Maven创建SpringMVC项目详解
     </h1>
     <div class="post-title-bar">
       <ul>
           
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/java/">java</a>
+                  
+              </li>
+          
         <li>
-          <i class="fa fa-calendar"></i>  2017-06-18
+          <i class="fa fa-calendar"></i>  2020-01-28
         </li>
         <li>
           <i class="fa fa-eye"></i>
@@ -136,14 +154,25 @@
           
       </header>
     
-    <div class="article-entry " itemprop="articleBody">
+    <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h3 id="1-博客更新时间是半个月一更"><a href="#1-博客更新时间是半个月一更" class="headerlink" title="1.博客更新时间是半个月一更"></a>1.博客更新时间是半个月一更</h3><h3 id="2-暂不开通博客讨论区跟评论，可以私聊我B站账号"><a href="#2-暂不开通博客讨论区跟评论，可以私聊我B站账号" class="headerlink" title="2.暂不开通博客讨论区跟评论，可以私聊我B站账号"></a>2.暂不开通博客讨论区跟评论，可以私聊我B站账号</h3><h3 id="3-目前颓废中ing…"><a href="#3-目前颓废中ing…" class="headerlink" title="3.目前颓废中ing…"></a>3.目前颓废中ing…</h3><h3 id="个人bilibili账号：https-space-bilibili-com-15064045"><a href="#个人bilibili账号：https-space-bilibili-com-15064045" class="headerlink" title="个人bilibili账号：https://space.bilibili.com/15064045"></a>个人bilibili账号：<a target="_blank" rel="noopener" href="https://space.bilibili.com/15064045">https://space.bilibili.com/15064045</a></h3>
+            <p>具体创建过程如下：</p>
+<p>使用快速创建maven项目<br><img src="/2020/01/28/blog5/pic1.png"></p>
+<p>输入初试包的名称以及项目名<br><img src="/2020/01/28/blog5/pic2.png"></p>
+<p>选择maven，这里推荐使用本地安装的maven，如果你没有代理的话，创建项目容易超时，初次使用maven时应注意在初始化的时候至少有28个以上文件才算初始化成功，保证今后创建的项目不会出错<br><img src="/2020/01/28/blog5/pic3.png"></p>
+<p>这里输入的项目名应该和一开始输入的名字保持一致，不然在项目运行时会出现两个项目<br><img src="/2020/01/28/blog5/pic4.png"></p>
+<p>1是初始化后的文件目录结构，这并不是Spring项目，只是一个简单的maven项目而已，2是配置文件，在这个文件我们可以添加所使用的依赖，当然使用dependence标签，我们可以在 <a target="_blank" rel="noopener" href="https://mvnrepository.com/">https://mvnrepository.com/</a> 找到我们所需要的任何依赖，直接复制进去就可以了，3如果你是第一次使用maven那么创建速度会很慢，等一段时间就好了，第一次加载完成后一定要查看自己的仓库文件大于等于28个为正常，文件数目不对需要重新创建项目重复上述步骤，直到成功<br><img src="/2020/01/28/blog5/pic5.png"></p>
+<p>在main文件下创建resources文件夹，然后改成Resources Root<br><img src="/2020/01/28/blog5/pic6.png"></p>
+<p>先在pom.xml文件中添加spring-webmvc依赖，然后在 resources创建META-INF文件夹，在这个文件夹低下创建spring config，命名为applicationContext.xml<br><img src="/2020/01/28/blog5/pic7.png"></p>
+<p>打开applicationContext.xml文件，按照提示创建点击ok，到此为止一个Spring项目就算搭建完成了<br><img src="/2020/01/28/blog5/pic8.png"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;现在是这是Spring创建完成后测试代码</span><br><span class="line">Hello.java</span><br><span class="line">package com.hello;</span><br><span class="line"></span><br><span class="line">public class Hello &#123;</span><br><span class="line">    private String name;</span><br><span class="line"></span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setName(String name) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void show()&#123;</span><br><span class="line">        System.out.println(&quot;hello &quot;+name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Main.java</span><br><span class="line">package com.hello;</span><br><span class="line"></span><br><span class="line">import org.springframework.context.ApplicationContext;</span><br><span class="line">import org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        ApplicationContext context &#x3D; new ClassPathXmlApplicationContext(&quot;META-INF&#x2F;applicationContext.xml&quot;);</span><br><span class="line">        Hello hello &#x3D; (Hello)context.getBean(&quot;hello&quot;);</span><br><span class="line">        hello.show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">applicationContext.xml</span><br><span class="line">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;beans xmlns&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&quot;</span><br><span class="line">       xmlns:xsi&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2001&#x2F;XMLSchema-instance&quot;</span><br><span class="line">       xsi:schemaLocation&#x3D;&quot;http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans http:&#x2F;&#x2F;www.springframework.org&#x2F;schema&#x2F;beans&#x2F;spring-beans.xsd&quot;&gt;</span><br><span class="line">        &lt;bean id&#x3D;&quot;hello&quot; class&#x3D;&quot;com.hello.Hello&quot;&gt;</span><br><span class="line">            &lt;property name&#x3D;&quot;name&quot; value&#x3D;&quot;spring&quot; &#x2F;&gt;</span><br><span class="line">        &lt;&#x2F;bean&gt;</span><br><span class="line">&lt;&#x2F;beans&gt;</span><br></pre></td></tr></table></figure>
+<p>点击运行出现以下内容表示Spring项目搭建完成<br><img src="/2020/01/28/blog5/pic9.png"></p>
+
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2021年02月15日 23:15</p>
-        <p>原始链接： <a class="post-url" href="/about/index.html" title="About">http://lanhuafengyue.github.io/about/index.html</a></p>
+        <p>最后更新： 2020年05月24日 10:30</p>
+        <p>原始链接： <a class="post-url" href="/2020/01/28/blog5/" title="idea使用Maven创建SpringMVC项目详解">http://lanhuafengyue.github.io/2020/01/28/blog5/</a></p>
         <footer>
             <a href="http://lanhuafengyue.github.io">
                 <img src="/images/logo.png" alt="蓝桦枫玥">
@@ -200,7 +229,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://lanhuafengyue.github.io/about/&title=《About》 — 蓝桦枫玥のブログ&pic=http://lanhuafengyue.github.ioimages/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://lanhuafengyue.github.io/2020/01/28/blog5/&title=《idea使用Maven创建SpringMVC项目详解》 — 蓝桦枫玥のブログ&pic=http://lanhuafengyue.github.ioimages/logo.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -210,22 +239,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lanhuafengyue.github.io/about/&title=《About》 — 蓝桦枫玥のブログ&source=" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lanhuafengyue.github.io/2020/01/28/blog5/&title=《idea使用Maven创建SpringMVC项目详解》 — 蓝桦枫玥のブログ&source=" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://lanhuafengyue.github.io/about/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://lanhuafengyue.github.io/2020/01/28/blog5/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《About》 — 蓝桦枫玥のブログ&url=http://lanhuafengyue.github.io/about/&via=http://lanhuafengyue.github.io" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《idea使用Maven创建SpringMVC项目详解》 — 蓝桦枫玥のブログ&url=http://lanhuafengyue.github.io/2020/01/28/blog5/&via=http://lanhuafengyue.github.io" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://lanhuafengyue.github.io/about/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://lanhuafengyue.github.io/2020/01/28/blog5/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -235,7 +264,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://lanhuafengyue.github.io/about/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://lanhuafengyue.github.io/2020/01/28/blog5/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -244,6 +273,13 @@
         <ul class="article-footer-menu">
             
             
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/Spring/" class="color2">Spring</a>
+      
+  </li>
+
         </ul>
         
     </footer>
@@ -251,17 +287,31 @@
 </article>
 
 
-    <aside class="post-toc-pos post-toc-top" id="post-toc">
-        <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E6%98%AF%E5%8D%8A%E4%B8%AA%E6%9C%88%E4%B8%80%E6%9B%B4"><span class="post-toc-text">1.博客更新时间是半个月一更</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-%E6%9A%82%E4%B8%8D%E5%BC%80%E9%80%9A%E5%8D%9A%E5%AE%A2%E8%AE%A8%E8%AE%BA%E5%8C%BA%E8%B7%9F%E8%AF%84%E8%AE%BA%EF%BC%8C%E5%8F%AF%E4%BB%A5%E7%A7%81%E8%81%8A%E6%88%91B%E7%AB%99%E8%B4%A6%E5%8F%B7"><span class="post-toc-text">2.暂不开通博客讨论区跟评论，可以私聊我B站账号</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-%E7%9B%AE%E5%89%8D%E9%A2%93%E5%BA%9F%E4%B8%ADing%E2%80%A6"><span class="post-toc-text">3.目前颓废中ing…</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%B8%AA%E4%BA%BAbilibili%E8%B4%A6%E5%8F%B7%EF%BC%9Ahttps-space-bilibili-com-15064045"><span class="post-toc-text">个人bilibili账号：https:&#x2F;&#x2F;space.bilibili.com&#x2F;15064045</span></a></li></ol>
-        </nav>
-    </aside>
-    
+
+<nav id="article-nav">
+  
+    <a href="/2020/04/26/blog6/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          Java Junit5单元测试
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2020/01/28/blog2/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Matlab跟Octave快速入门以及常用命令总结</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
 
 
 
     
-        <div id="SOHUCS" sid="" ></div>
+        <div id="SOHUCS" sid="blog5" ></div>
 <script type="text/javascript">
     (function(){
         var appid = 'cyvjfY9nI';
