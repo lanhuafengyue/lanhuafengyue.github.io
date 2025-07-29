@@ -7,7 +7,7 @@ selected:       true
 pub_post:       'Under review.'
 
 cover:          /assets/images/pub/demo1.png
-authors:, YuXing Li
+authors: 
   - YuXing Li
   - <b>YuXing Li</b>
   - Feng-Xiang Ge
