@@ -9,5 +9,5 @@ authors:
 - YuXing Lee
 - Wei Wu
 links:
-  Paper: [link](https://doi.org/10.1109/ICIP49359.2023.10222554)
+  Paper: https://doi.org/10.1109/ICIP49359.2023.10222554
 ---
