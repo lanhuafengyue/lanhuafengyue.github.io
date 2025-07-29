@@ -7,13 +7,11 @@ selected:       true
 pub_post:       'Under review.'
 
 cover:          /assets/images/pub/demo1.png
-authors:
+authors:, YuXing Li, , 
+  - LiangYuan
   - <b>YuXing Li</b>
+  - Shengxin Zhu
   - Feng-Xiang Ge
-  - Bo Sun
-  - Jun He
-  - Zhang Ying Hui
 links:
   Paper: None
-  Code: None
 ---
