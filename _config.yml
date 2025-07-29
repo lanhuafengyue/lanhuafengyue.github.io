@@ -33,8 +33,8 @@ plugins:
 #   - vendor/ruby/
 
 # timezone: Asia/Shanghai
-
+# 如果需要新的界面，在这里添加即可
 collections:
   - publications
   - news
-  - showcase
+  # - showcase
