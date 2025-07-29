@@ -23,9 +23,7 @@ github: lanhuafengyue
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I'm YuXing Li and I'm currently pursuing a Ph.D. degree at School of Artificial Intelligence, Beijing Normal University
-  </p>
-  <p>
+    I'm YuXing Li and I'm currently pursuing a Ph.D. degree at School of Artificial Intelligence, Beijing Normal University.
     My research interests in the fields of machine learning, deep learning, computer vision (including image and point cloud processing), 
     as well as related multimodal data analysis. Recently, I have also begun exploring acoustic data, 
     particularly in the domain of underwater acoustics.
