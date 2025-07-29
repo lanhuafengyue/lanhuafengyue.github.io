@@ -1,6 +1,6 @@
 ---
 title:          "Fourier Contrastive Learning for Source Free Domain Adaptation"
-date:           2025
+date:           2025-6-30
 selected:       true
 # pub:            "Under Review"
 # pub_pre:        "Submitted to "
