@@ -6,7 +6,7 @@ pub:            "2023 IEEE International Conference on Image Processing (ICIP)"
 pub_date:       "2023"
 cover:          /assets/images/pub/icip2023.png
 authors:
-- YuXing Lee
+- <b>YuXing Lee</b>
 - Wei Wu
 links:
   Paper: https://doi.org/10.1109/ICIP49359.2023.10222554
