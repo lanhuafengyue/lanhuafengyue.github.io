@@ -1,22 +1,14 @@
 ---
-title:          "Publication without cover image"
-date:           2023-01-1 00:01:00 +0800
-selected:       false
-pub:            "International Conference on Learning Representations (ICLR)"
-# pub_pre:        "Submitted to "
-# pub_post:       'Under review.'
-# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
-pub_date:       "2023"
+title:          "SCANet: Semantic Coherence Attention Network for Clothing Change Person Re-identification"
+date:           2024-10-10 
+selected:       true
+pub:            "International Conference on Multimedia Modeling"
 
-abstract: >-
-  When the cover image is not provided, it will generate a random colorful bubble images as the cover image using the <code>bubble_visual_hash.js</code> script.
-# cover:          /assets/images/covers/cover3.jpg
+cover:          /assets/images/pub/mmm2024.png
 authors:
-  - Your Name*#
-  - James Wang*
-  - Some Other Name
-  - John Doe
+  - Dajiang Yang
+  - Wei Wu
+  - <b>Yuxing Lee</b>
 links:
-  Code: https://github.com/luost26/bubble-visual-hash
-  Demo: https://luost26.github.io/bubble-visual-hash
+  Paper: https://link.springer.com/chapter/10.1007/978-981-96-2064-7_29
 ---
