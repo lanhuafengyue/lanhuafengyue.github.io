@@ -1,17 +1,13 @@
 ---
-title:          "Lorem ipsum: Dolor sit amet, consectetur adipiscing elit"
-date:           2023-01-05 00:01:00 +0800
+title:          "Feature adversarial distillation for point cloud classification"
+date:           2023-06-05
 selected:       true
-pub:            "Nature Communications"
+pub:            "2023 IEEE International Conference on Image Processing (ICIP)"
 pub_date:       "2023"
-abstract: >-
-  Cover image is a photo by Thomas Renaud on Unsplash. The abstract of the publication is meant to be a TLDR (very brief summary with 1~2 sentences) of your paper.
-cover:          /assets/images/covers/cover1.jpg
+cover:          /assets/images/pub/icip2023.png
 authors:
-- Your Name*
-- Robert White*
-- John Doe
-- Charles Green (Stanford)
+- YuXing Lee
+- Wei Wu
 links:
-  Paper: https://www.cell.com
+  Paper: [link](https://doi.org/10.1109/ICIP49359.2023.10222554)
 ---
