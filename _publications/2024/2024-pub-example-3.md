@@ -8,7 +8,6 @@ pub_post:       'Under review.'
 
 cover:          /assets/images/pub/demo1.png
 authors: 
-  - YuXing Li
   - <b>YuXing Li</b>
   - Feng-Xiang Ge
   - Bo Sun
@@ -16,4 +15,5 @@ authors:
   - Zhang Ying Hui
 links:
   Paper: None
+  Code: None
 ---
