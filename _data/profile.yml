@@ -29,7 +29,7 @@ short_bio: >-
     particularly in the domain of underwater acoustics.
   </p>
   <p>
-    <b>Academic Position</b> long served as a reviewer for ICME and IJCNN. Session Chair for IJCNN 2024.
+    <b>Academic Position</b> long served as a reviewer for ICME, IJCNN, and Pattern Recognition. Session Chair for IJCNN 2024.
   </p>
   <p>
     <b> My Friends and Collaborators </b> &nbsp;&nbsp; <a href="https://yifanmao1998.github.io/">Yifan Mao</a> &nbsp;&nbsp; <a href="#">Ran Yan</a> 
@@ -42,13 +42,13 @@ portrait_caption: >-
 
 education:
 - name: Inner Mongolia University
-  logo: /assets/images/badges/MIT_Social_circle.png
+  logo: /assets/images/badges/imu.jpg
   position: >- 
     Department of Computer Science & Artificial Intelligence <br/>
     M.S. Student
   date: Sep. 2021 - Sep. 2024
 - name: Beijing Normal University
-  logo: /assets/images/badges/PKU_red.png
+  logo: /assets/images/badges/bnu.jpg
   position: Student School of Artificial Intelligence <br/>
     Ph.D. Student
   date: Sep. 2024 - present
