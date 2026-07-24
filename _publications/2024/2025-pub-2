@@ -2,9 +2,9 @@
 title:          "Simple and Interpretable Audio-Visual Generalized Zero-Shot Learning"
 date:           2025-6-29
 selected:       true
-# pub:            "Under Review"
+pub:            "Neurocomputing"
 # pub_pre:        "Submitted to "
-pub_post:       'Under review.'
+# pub_post:       'Under review.'
 
 cover:          /assets/images/pub/demo2.png
 authors:
