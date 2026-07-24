@@ -15,5 +15,4 @@ authors:
   - Zhang Ying Hui
 links:
   Paper: None
-  Code: None
 ---
